@@ -1,7 +1,8 @@
-#include "header.h"
+#include "C:\Users\kcs\Desktop\Simple_lib_code\Simple_lib_code\header.h"
+#include "C:\Users\kcs\Desktop\Simple_lib_code\Simple_lib_code\body.cpp"
 
-int main(void)
+extern "C" _declspec(dllexport) double sumTwo(double var_x, double var_y)
 {
-	myClass sumTwoClass(10, 5);
-	double result = sumTwoClass.sum_XY();
+	myClass MC(var_x, var_y);
+	return MC.sum_XY();
 }
